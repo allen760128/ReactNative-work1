@@ -23,10 +23,10 @@ export default function App() {
         <Text style={styles.textStyle2}>Your phone number is</Text>
         <Text style={styles.textStyle3}>{phone}</Text>
         <Text style={styles.textStyle5}>Please enter your phone number</Text>
-        <TextInput style={styles.input} onChangeText={cellphone} maxLength={10} value={phone}></TextInput>
+        <TextInput style={styles.input} onChangeText={cellphone} maxLength={10} value={phone} keyboardType={'numbers-and-punctuation'}></TextInput>
         <Text style={[styles.textStyle4, { color: '#FFFF00' }]}>{cont}</Text>
         <Text style={styles.textStyle5}>Please enter again</Text>
-        <TextInput style={styles.input} onChangeText={cellphoneAgain} maxLength={10} value={phoneAgain}></TextInput>
+        <TextInput style={styles.input} onChangeText={cellphoneAgain} maxLength={10} value={phoneAgain} keyboardType={'numbers-and-punctuation'}></TextInput>
         <Text style={[styles.textStyle4, { color: '#FFFF00' }]}>{contAgain}</Text>
 
       </View >
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     height: 25,
     backgroundColor: '#fff',
     marginTop: 5,
-    borderWidth: 1,
+    // borderWidth: 1,
     borderRadius: 20,
     paddingLeft: 10
   }
